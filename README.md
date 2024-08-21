@@ -22,17 +22,17 @@ In Matlab, please install Reinforcement Learning Toolbox.
 
 ## Code Files and Running order
 
-1. In directory `time_evolu_sub_chain`
+a. In directory `time_evolu_sub_chain`
    
-  a. `basisAndHamiltonian.py` is used to construct the Hamiltonian matrix and its basis with output `data.mat`;
+  1. `basisAndHamiltonian.py` is used to construct the Hamiltonian matrix and its basis with output `data.mat`;
   
-  b. `pre_data.m` is used to process data from `data.mat` with output `pre_data.mat`;
+  2. `pre_data.m` is used to process data from `data.mat` with output `pre_data.mat`;
   
-  c. `time_evo.m` is used to do the numerical simulation, save, and plot resulting fidelity, imbalance, and entropy.
+  3. `time_evo.m` is used to do the numerical simulation, save, and plot resulting fidelity, imbalance, and entropy.
 
-3. In remaining directories `RL_obser_imbalance`, `RL_obser_F_sub`, and `RL_obser_F_full`
+b. In remaining directories `RL_obser_imbalance`, `RL_obser_F_sub`, and `RL_obser_F_full`
    
-   The same runing order a. and b. Next, run `PPO.m` and then `test_PPO.m`
+   After process data with `pre_data.mat`. Next, run `PPO.m` and then `test_PPO.m`
    
 ## Tips
 
