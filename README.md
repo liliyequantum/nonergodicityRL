@@ -4,51 +4,32 @@
 
 Windows 10, CPU or GPU for 14 number of lattice
 
-## Setup
+## Setup and Running the Code
 
 To set up the environment, open the Anaconda Prompt and run the following commands:
 
 ```sh
-conda create -n qmbs python=3.9
+conda create -n qmbs python=3.9 #if you need to delete env, use this command 'conda remove --name qmbs --all'
 conda env list
 conda activate qmbs
-pip install spyder
 pip install -r requirements.txt
+pip install spyder
+spyder #Open spyder by running the following command in the Anaconda Prompt
 ```
 
-## File Placement for the Custom Quantum Environment
-1. Put all files from the directory `.\cust_env\classical_control\` into the `qutip_RL` environment directory at `C:\users\yourUserName\anaconda3\envs\qutip_RL\Lib\site-packages\gym\envs\classic_control\`, replacing the original files.
+In Matlab, please install Reinforcement Learning Toolbox.
 
-2. Copy the file from `.\cust_env\__init__.py` and paste it into `C:\users\yourUserName\anaconda3\envs\qutip_RL\Lib\site-packages\gym\envs\__init__.py`, replacing the original file.
 
-## Running the Code
+## Code Files and Running order
 
-Open spyder by running the following command in the Anaconda Prompt
-```sh
-spyder
-```
+1. `time_evolu_sub_chain`
+  a. `basisAndHamiltonian.py` is used to construct the Hamiltonian matrix and its basis with output `data.mat`;
+  b. `pre_data.m` is used to process data from `data.mat` with output `pre_data.mat`
+  c. `time_evo.m` is used to do the numerical simulation, save, and plot resulting fidelity, imbalance, and entropy.
 
-## Code Files
-
-1. Files with the suffix `fig_plot` are used for plotting figures.
-
-2. Files with the suffix `fig_code` are used for plotting partial figures.
-
-3. Files with the suffix `fig_data` are used for generating data for figures.
-
+2. `RL_obser_imbalance`, `RL_obser_F_sub`, and `RL_obser_F_full`
+   The same runing order a. and b. Next, run `PPO.m` and then `test_PPO.m`
+   
 ## Tips
 
-1. When running the training code (e.g., `training_fig2_data.py`), you can copy it into a new directory named code_test. In this directory, you can try reducing the training load by setting parameters such as `n_episode = 10`, `n_steps = 10`, `n_update = 2`, and `output_interval = 2`. This will allow you to quickly test the code.
-
-2. The testing process in the code (e.g., `test_ave_fig2_code.py`) has the testing function (e.g., `PPOtest`) commented out and saves all testing data. You can simply plot all results by running such codes (e.g., `test_ave_fig2_code.py`) directly.
-
-## Data
-The complete training results from Figures 4 to 8 and Figures S1 to S2 have been shared on Zenodo: [https://doi.org/10.5281/zenodo.12584159]
-
-## References
-
-1. Stable-baselines3 for the PPO agent: [https://stable-baselines3.readthedocs.io/en/master/index.html]
-
-2. Sb3-contrib for the recurrent PPO agent: [https://sb3-contrib.readthedocs.io/en/master/index.html]
-
-3. QuTip: [https://qutip.readthedocs.io/en/master/index.html]
+First run the code, suggest set `numLattice = 8 or 10`, `n_steps = 10`,  `n_episode=10`, `output_interval = 1` 
