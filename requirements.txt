@@ -1,0 +1,5 @@
+numpy
+tqdm
+scipy
+h5py
+hdf5storage
