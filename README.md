@@ -1,4 +1,4 @@
-# nonergodicity_RL_control for 1D tilted Fermi-Hubbard chain
+# Nonergodicity_RL_control for 1D tilted Fermi-Hubbard chain
 
 ## System requirement
 
