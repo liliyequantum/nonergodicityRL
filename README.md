@@ -42,7 +42,7 @@ First run the code, suggest set `numLattice = 8 or 10`, `n_steps = 10`,  `n_epis
 If you use this code, please cite:
 
 ```bibtex
-@software{li_2026_nonergodicityRL,
+@software{Ye_2026_nonergodicityRL,
   author       = {Ye, Li-Li},
   title        = {nonergodicityRL},
   version      = {v1.0},
