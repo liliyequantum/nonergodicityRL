@@ -37,3 +37,18 @@ b. In remaining directories `RL_obser_imbalance`, `RL_obser_F_sub`, and `RL_obse
 ## Tips
 
 First run the code, suggest set `numLattice = 8 or 10`, `n_steps = 10`,  `n_episode=10`, `output_interval = 1` 
+
+## Citation
+If you use this code, please cite:
+
+```bibtex
+@software{li_2026_nonergodicityRL,
+  author       = {Ye, Li-Li},
+  title        = {nonergodicityRL},
+  version      = {v1.0},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.21418307},
+  url          = {https://doi.org/10.5281/zenodo.21418307}
+}
+```
