@@ -42,13 +42,14 @@ First run the code, suggest set `numLattice = 8 or 10`, `n_steps = 10`,  `n_epis
 If you use this code, please cite:
 
 ```bibtex
-@software{Ye_2026_nonergodicityRL,
-  author       = {Ye, Li-Li},
-  title        = {nonergodicityRL},
-  version      = {v1.0},
-  year         = {2026},
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.21418307},
-  url          = {https://doi.org/10.5281/zenodo.21418307}
+@article{ye2025controlling,
+  title={Controlling nonergodicity in quantum many-body systems by reinforcement learning},
+  author={Ye, Li-Li and Lai, Ying-Cheng},
+  journal={Physical Review Research},
+  volume={7},
+  number={1},
+  pages={013256},
+  year={2025},
+  publisher={APS}
 }
 ```
