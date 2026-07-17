@@ -1,5 +1,3 @@
-# Nonergodicity_RL_control for 1D tilted Fermi-Hubbard chain
-
 ## System requirement
 
 Windows 10, CPU or GPU for 14 number of lattice
